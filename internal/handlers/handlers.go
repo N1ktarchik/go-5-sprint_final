@@ -31,7 +31,7 @@ func MainHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "invalid request method", http.StatusInternalServerError)
 		return
 	}
-	txt, err := os.ReadFile("C:\\GO_КУРС\\ФИНАЛЬНЫЕ ЗАДАНИЯ\\СПРИНТ 6\\go-5-sprint_final\\index.html")
+	txt, err := os.ReadFile("index.html")
 	if err != nil {
 		http.Error(w, "error read html file", http.StatusInternalServerError)
 		return
